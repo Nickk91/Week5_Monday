@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         Front-end development: The DOM
+      // JavaScript – create a web page
+      // The following exercise contains the following subjects:
+      // ● the dom
+      // Instructions
+      // Practice makes perfect!
+      // Create a web page in pure JavaScript!
+
+      let body = document.getElementsByTagName("body")[0];
+
+      let h1 = document.createElement("h1");
+      h1.innerText = "The Most Awesome Site";
+
+      let p = document.createElement("p");
+      p.innerText =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum error nulla dolorum possimus quas fuga et aspernatur, eaque, autem esse dolore quia sit debitis in? Est, dolorum aliquid! Dolore, ad possimus, eius inventore saepe, nemo velit quibusdam voluptatem nihil laudantium fugit molestias vel. Nesciunt ducimus a magnam perferendis non.";
+
+      const ul = document.createElement("ul");
+      let li = document.createElement("li");
+      li.textContent = "Home";
+      ul.appendChild(li);
+
+      let li2 = document.createElement("li");
+      li2.textContent = "Gallery";
+      ul.appendChild(li2);
+
+      let li3 = document.createElement("li");
+      li3.textContent = "About";
+      ul.appendChild(li3);
+
+      let li4 = document.createElement("li");
+      li4.textContent = "Blog";
+      ul.appendChild(li4);
+
+      ul.style.listStyleType = "none";
+      ul.style.display = "flex";
+      ul.style.webkitJustifyContent = "space-between";
+
+      h1.style.position = "center";
+
+      body.style.background = "yellow";
+
+      body.appendChild(h1);
+      body.appendChild(p);
+      body.appendChild(ul);
+    </script>
+  </body>
+</html>
